@@ -26,6 +26,7 @@ This repository provides a Windows Registry file that adds a unified Terminal co
 -   **Clean Context Menu:**  
     Hides the default Windows context menu entries for Command Prompt, PowerShell, Windows Terminal, and Git Bash to reduce clutter.
     
+![alt text](https://github.com/Antariksh-Singh-07/Complete-Terminal-Context-Menu/blob/main/image.png?raw=True "Overview Example Image")
 
 ----------
 
