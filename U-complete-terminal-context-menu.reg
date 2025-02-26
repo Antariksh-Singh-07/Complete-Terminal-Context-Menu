@@ -1,0 +1,39 @@
+Windows Registry Editor Version 5.00
+
+; Remove the custom Terminal menus
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal]
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal]
+
+; Remove modifications for hidden default context menu entries in Directory Background
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd]
+"ShowBasedOnVelocityId"=-
+"HideBasedOnVelocityId"=-
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Powershell]
+"ShowBasedOnVelocityId"=-
+"HideBasedOnVelocityId"=-
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\AnyCode]
+"ShowBasedOnVelocityId"=-
+"HideBasedOnVelocityId"=-
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\git_shell]
+"ShowBasedOnVelocityId"=-
+"HideBasedOnVelocityId"=-
+
+; Remove modifications for hidden default context menu entries in Desktop Background
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\cmd]
+"ShowBasedOnVelocityId"=-
+"HideBasedOnVelocityId"=-
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\Powershell]
+"ShowBasedOnVelocityId"=-
+"HideBasedOnVelocityId"=-
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\AnyCode]
+"ShowBasedOnVelocityId"=-
+"HideBasedOnVelocityId"=-
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\git_shell]
+"ShowBasedOnVelocityId"=-
+"HideBasedOnVelocityId"=-

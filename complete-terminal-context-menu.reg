@@ -1,0 +1,187 @@
+Windows Registry Editor Version 5.00
+
+; Add Terminal Menu to Desktop Background
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal]
+"MUIVerb"="Terminal"
+"Icon"="imageres.dll,-5323"
+"SubCommands"=""
+
+; Command Prompt Option
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\cmd]
+"MUIVerb"="Command Prompt"
+"Icon"="cmd.exe,0"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\cmd\command]
+@="\"cmd.exe\" /K CD \"%V\""
+
+; PowerShell Option
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\powershell]
+"MUIVerb"="PowerShell"
+"Icon"="powershell.exe,0"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\powershell\command]
+@="\"powershell.exe\" -NoExit -Command \"Set-Location \\\"%V\\\"\""
+
+; PowerShell 7 Option
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\pwsh7]
+"MUIVerb"="PowerShell 7"
+"Icon"="C:\\Program Files\\PowerShell\\7\\pwsh.exe,0"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\pwsh7\command]
+@="\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -NoExit -Command \"Set-Location \\\"%V\\\"\""
+
+; Git Bash Option
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\gitbash]
+"MUIVerb"="Git Bash"
+"Icon"="C:\\Program Files\\Git\\git-bash.exe,0"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\gitbash\command]
+@="\"C:\\Program Files\\Git\\bin\\bash.exe\" --cd=\"%V\""
+
+; Admin Options
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\cmdAdmin]
+"MUIVerb"="Command Prompt (Admin)"
+"Icon"="cmd.exe,0"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\cmdAdmin\command]
+@="powershell.exe -Command \"Start-Process -FilePath 'cmd.exe' -ArgumentList '/K CD \"%V\"' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\powershellAdmin]
+"MUIVerb"="PowerShell (Admin)"
+"Icon"="powershell.exe,0"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\powershellAdmin\command]
+@="powershell.exe -Command \"Start-Process -FilePath 'powershell.exe' -ArgumentList '-NoExit -Command \\\"Set-Location \\\\\\\"%V\\\\\\\"\\\"' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\pwsh7Admin]
+"MUIVerb"="PowerShell 7 (Admin)"
+"Icon"="C:\\Program Files\\PowerShell\\7\\pwsh.exe,0"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\pwsh7Admin\command]
+@="powershell.exe -Command \"Start-Process -FilePath 'C:\\Program Files\\PowerShell\\7\\pwsh.exe' -ArgumentList '-NoExit -Command \\\"Set-Location \\\\\\\"%V\\\\\\\"\\\"' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\gitbashAdmin]
+"MUIVerb"="Git Bash (Admin)"
+"Icon"="C:\\Program Files\\Git\\git-bash.exe,0"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Terminal\shell\gitbashAdmin\command]
+@="powershell.exe -Command \"Start-Process -FilePath 'C:\\Program Files\\Git\\git-bash.exe' -ArgumentList '--cd=\"\"%V\"\"' -Verb RunAs\""
+
+; Add Terminal Menu to Directory Background
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal]
+"MUIVerb"="Terminal"
+"Icon"="imageres.dll,-5323"
+"SubCommands"=""
+
+; Command Prompt Option
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\cmd]
+"MUIVerb"="Command Prompt"
+"Icon"="cmd.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\cmd\command]
+@="\"cmd.exe\" /K CD \"%V\""
+
+; PowerShell Option
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\powershell]
+"MUIVerb"="PowerShell"
+"Icon"="powershell.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\powershell\command]
+@="\"powershell.exe\" -NoExit -Command \"Set-Location \\\"%V\\\"\""
+
+; PowerShell 7 Option
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\pwsh7]
+"MUIVerb"="PowerShell 7"
+"Icon"="C:\\Program Files\\PowerShell\\7\\pwsh.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\pwsh7\command]
+@="\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -NoExit -Command \"Set-Location \\\"%V\\\"\""
+
+; Git Bash Option
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\gitbash]
+"MUIVerb"="Git Bash"
+"Icon"="C:\\Program Files\\Git\\git-bash.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\gitbash\command]
+@="\"C:\\Program Files\\Git\\bin\\bash.exe\" --cd=\"%V\""
+
+; Admin Options
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\cmdAdmin]
+"MUIVerb"="Command Prompt (Admin)"
+"Icon"="cmd.exe,0"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\cmdAdmin\command]
+@="powershell.exe -Command \"Start-Process -FilePath 'cmd.exe' -ArgumentList '/K CD \"%V\"' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\powershellAdmin]
+"MUIVerb"="PowerShell (Admin)"
+"Icon"="powershell.exe,0"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\powershellAdmin\command]
+@="powershell.exe -Command \"Start-Process -FilePath 'powershell.exe' -ArgumentList '-NoExit -Command \\\"Set-Location \\\\\\\"%V\\\\\\\"\\\"' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\pwsh7Admin]
+"MUIVerb"="PowerShell 7 (Admin)"
+"Icon"="C:\\Program Files\\PowerShell\\7\\pwsh.exe,0"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\pwsh7Admin\command]
+@="powershell.exe -Command \"Start-Process -FilePath 'C:\\Program Files\\PowerShell\\7\\pwsh.exe' -ArgumentList '-NoExit -Command \\\"Set-Location \\\\\\\"%V\\\\\\\"\\\"' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\gitbashAdmin]
+"MUIVerb"="Git Bash (Admin)"
+"Icon"="C:\\Program Files\\Git\\git-bash.exe,0"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Terminal\shell\gitbashAdmin\command]
+@="powershell.exe -Command \"Start-Process -FilePath 'C:\\Program Files\\Git\\git-bash.exe' -ArgumentList '--cd=\"\"%V\"\"' -Verb RunAs\""
+
+; Remove default context menu entries
+
+; Hide default Command Prompt entry
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd]
+"ShowBasedOnVelocityId"=dword:00639bc8
+"HideBasedOnVelocityId"=dword:00639bc8
+
+; Hide default PowerShell entry
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Powershell]
+"ShowBasedOnVelocityId"=dword:00639bc8
+"HideBasedOnVelocityId"=dword:00639bc8
+
+; Hide default Windows Terminal entry
+[HKEY_CLASSES_ROOT\Directory\Background\shell\AnyCode]
+"ShowBasedOnVelocityId"=dword:00639bc8
+"HideBasedOnVelocityId"=dword:00639bc8
+
+; Hide default Git Bash entry (if installed)
+[HKEY_CLASSES_ROOT\Directory\Background\shell\git_shell]
+"ShowBasedOnVelocityId"=dword:00639bc8
+"HideBasedOnVelocityId"=dword:00639bc8
+
+; Also apply to DesktopBackground
+
+; Hide default Command Prompt entry
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\cmd]
+"ShowBasedOnVelocityId"=dword:00639bc8
+"HideBasedOnVelocityId"=dword:00639bc8
+
+; Hide default PowerShell entry
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\Powershell]
+"ShowBasedOnVelocityId"=dword:00639bc8
+"HideBasedOnVelocityId"=dword:00639bc8
+
+; Hide default Windows Terminal entry
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\AnyCode]
+"ShowBasedOnVelocityId"=dword:00639bc8
+"HideBasedOnVelocityId"=dword:00639bc8
+
+; Hide default Git Bash entry (if installed)
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\git_shell]
+"ShowBasedOnVelocityId"=dword:00639bc8
+"HideBasedOnVelocityId"=dword:00639bc8
